@@ -1,5 +1,5 @@
 # AES_CBC_decrypt_without_vi
-AES CBC decryption operation via a generic key extraction algorithm that generates key and vi without VI parameters. 没有VI参数的AES_CBC解密算法
+AES CBC decryption operation via a generic key extraction algorithm that generates key and iv without IV parameters. 没有IV参数的AES_CBC解密算法
 ## PROCESS. 流程  
 
 1. Verify ciphertext(after base64 decode).  
@@ -18,11 +18,11 @@ AES CBC decryption operation via a generic key extraction algorithm that generat
      _密文长度至少是16个字节。**AI推测的，没有验证**_
 2. Extract salt from ciphertext via `substr()`.  
    从密文中提取盐值。
-3. Generate `key` and `vi` via `evpkdf()`.  
-   通过`evpkdf()`生成`密钥`和`vi`。
+3. Generate `key` and `iv` via `evpkdf()`.  
+   通过`evpkdf()`生成`密钥`和`iv`。
 4. Decrypt ciphertext via `openssl_decrypt()`.  
    通过`openssl_decrypt()`解密密文。
 ### PHP Language level 语言等级
 PHP 8.0  
-Please modify the code according to your PHP version.
+Please modify the code according to your PHP version.  
 请跟据自己使用的语言等级进行相应的代码修改。

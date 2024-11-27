@@ -56,9 +56,9 @@ function decryptAes(string $encryptedData, string $password,bool $isBase64Encode
     return openssl_decrypt($ciphertext, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv);
 }
 //Test
-$encryptedData = "U2FsdGVkX1/CdPzIDRRWQTlMz5dVNRib5ZBmfkwVzDRdKsVsZZI2vXlFYDJhAREKT02xkPd4n1UbcweRSzmnxlkQ81N5Al8n4S7a2RGmgS8=";
-$password = "AES-CBC-decrypt-without-vi";
-//Output: Decrypted text: https://github.com/cccaimingjian/AES-CBC-decrypt-without-vi
+$encryptedData = "U2FsdGVkX18OXPtxnMEHa0vOjDYf/hmRwhRdMCklbu0v+NWby3PIprAM15EttS4QdMyN9EYcqlPwe68qKLLLztvmKCdhDipKyqykkdYJ96M=";
+$password = "AES-CBC-decrypt-without-iv";
+//Output: Decrypted text: https://github.com/cccaimingjian/AES-CBC-decrypt-without-iv
 echo "Decrypted text: " . decryptAes($encryptedData, $password) . PHP_EOL;
 //another test
 $encryptedData = "U2FsdGVkX1/soU7FOzBRN+D0t8qB/1kS3UGfrsmzu40=";
