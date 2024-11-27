@@ -1,4 +1,4 @@
-# AES_CBC_decrypt_without_vi
+# AES_CBC_decrypt_without_iv
 AES CBC decryption operation via a generic key extraction algorithm that generates key and iv without IV parameters. 没有IV参数的AES_CBC解密算法
 ## PROCESS. 流程  
 
