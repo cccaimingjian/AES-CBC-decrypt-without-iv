@@ -2,6 +2,7 @@
 /**
  * generate key and iv for AES encryption.
  * 生成AES加密的密钥和iv
+ * 这个提取算法叫EVP_Bytestokey
  * @param $password string 密码
  * @param $salt string 盐
  * @param $keySize int 密钥长度
